@@ -1,0 +1,53 @@
+1. Adding a new repository
+
+echo "# This is my first commit" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/your_user/your_repo
+git push -u origin main
+
+
+/* Common Commands to run during the course, these three commands allow your new files/folders/changes to be pushed, be sure to change the commit message! */
+    git add .
+    git commit -m "your update message"
+    git push
+
+2. Add an existing repository
+
+//Display the current status of your files. Do this often!
+    git status
+
+//Copies an existing repository to your computer
+    git clone https://github.com/some_user/some_repo
+
+
+//clone a specific branch from a repository. 
+    //Change main to your specific branch name.
+    git clone -b yourBranch https://github.com/some_user/some_repo
+
+//Switch to another branch
+    git checkout some_branch 
+
+//Create a new branch
+    git checkout -b new_branch
+
+3. Updating exiting files in your repository
+//Add all files
+    git add . 
+
+//Add a specific file ie index.html 
+    git add someFile.fileextension  
+
+//Commits to adding your changes to the repository
+    git commit -m "new message"
+
+//Pushes changes up to your GitHub repository
+    git push
+
+//Pulls changes from your GitHub repository
+    git pull
+
+//Change a file name and keep the History
+    git mv old_file_name.js new_file_name.html
