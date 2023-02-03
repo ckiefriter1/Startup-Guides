@@ -1,3 +1,46 @@
+	/* Variable declaration - type, identifier(name), assignment, operator, semicolon
+   *
+   *       [type] [identifier(name)] [assignment]/[operator] [semicolon]
+   *       Example:  int age = 25;
+	 * 
+	 * <u>Naming convention for variables</u> follows camelCase, meaning the first word in a name 
+	 * starts with lower case character and every subsequent word in the name starts with an Upper case character.
+	 * 2 types of variables: Primitives and Objects
+	 * 
+	 * Primitive Types:
+	 * 
+	 * byte  -  8-bit integer, Range = -127 to 128
+	 * Short - 16-bit integer, Range = -32,768 to 32,767
+	 * int   - 32-bit integer, Range = -2(to the power of 31) to 2(to the power of 31)-1
+	 * long  - 64-bit integer, Range = -2(to the power of 63) to 2(to the power of 63)-1
+	 * 
+	 * float  - 32-bit floating point with a decimal
+	 * double - 64-bit floating point with a decimal
+	 * 
+	 * boolean - true/false
+	 * char    - Single 16-bit character (e.g., a, B, c, G)
+	 * 
+	 * 
+	 * Objects:
+	 * String - is textual data, a string of characters
+	 * 
+	 * 
+	 * Default values
+	 * The following chart summarizes the default values for the above data types.
+	 * 
+	 * Data Type	Default Value (for fields)
+	 * byte	    	0
+	 * short		0
+	 * int	    	0
+	 * long	    	0L
+	 * float		0.0f
+	 * double		0.0d
+	 * char	    	'\u0000' (or 0)
+	 * boolean		false
+     * String (or any object)  	null
+	 * 
+	 */
+
 [Link to Oracle Java documnetation on Primitives:](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
 
 byte: The byte data type is an 8-bit signed two's complement integer. It has a minimum value of -128 and a maximum value of 127 (inclusive). The byte data type can be useful for saving memory in large arrays, where the memory savings actually matters. They can also be used in place of int where their limits help to clarify your code; the fact that a variable's range is limited can serve as a form of documentation.
